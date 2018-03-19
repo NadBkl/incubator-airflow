@@ -4305,7 +4305,7 @@ class Variable(Base, LoggingMixin):
             keys = {obj.key for obj in session.query(Variable).all()}
             return keys
         except Exception as e:
-            logging.warning("Failed to get keys")
+            logging.warning("Failed to retrieve keys")
             logging.exception(e)
 
 
